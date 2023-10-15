@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haidra's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+<body>
+    <header>
+        <h1>Haidra Suleiman</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <p>
+                    I am an organised, effecient and hard working person, and am willing to discover and accept
+                    new ideas and concepts which can be put into practice effectivley. I am looking to relocate
+                    in search of exciting new opportunities.
+                </p>
+            </div>
+
+            <div class="portrait">
+                <img src="./IMG_5287.jpg" alt="Personal Image" />
+            </div>
+
+        </div>
+        <div class="container">
+
+            <div class="projects">
+                <h2>Projects</h2>
+                <ul class="list">
+                    <li> <a href="#show" id="coaches" onclick="displaySection()">Coaches Website</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>Location: Didcot, Oxfordshire, UK<br>
+                    Phone Number: <a href="tel:+447591215613">+44 7591 215613</a><br>
+                    E-mail: <a href="mailto:h.souleman@icloud.com">h.souleman@icloud.com</a><br>
+                    GitHub: <a href="http://github.com/HaidraSuleiman" target="_blank">Link to GitHub Page</a><br>
+                </p>
+            </div>
+        </div>
+
+        <div class="container coaches-section" id="show">
+            <h2>Coaches Website</h2>
+            <div class="container" id="inner">
+                <div class="container" id="links">
+                <a href="https://vue-coach-project-3ee5c.web.app/coaches" target="_blank" class="weblink">Visit Website</a>
+                <a href="https://github.com/HaidraSuleiman/coaches-website" target="_blank" class="weblink">View on Github</a>
+            </div>
+                <div class="coachesscreen">
+                    <img src="./SharedScreenshot.jpg" alt="Website Screenshot" />
+                </div>
+            </div>
+            <p class="coaches-desc">A site for visitors to browse listings of coaching services, find and filter
+                coaches
+                based on their needs, and then either contact a coach or create an account to
+                register as a coach and create a listing themselves.
+            </p>
+        </div>
+
+    </main>
+    <footer>
+        <p>CV Website</p>
+    </footer>
+    <script>
+        function displaySection() {
+            let show = document.getElementById('show');
+            if (show.style.display === 'none' || show.style.display === "") {
+                show.style.display = 'flex';
+            } else {
+                show.style.display = 'none';
+            }
+        }
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+
+</html>

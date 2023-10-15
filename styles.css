@@ -1,0 +1,143 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0 var(--spacing-3);
+    max-width: 900px;
+    margin: 0 auto;
+    background-color:hsl(0, 0%, 66%);
+}
+h1 {
+    text-align: center;
+}
+main {
+    margin-top: 7rem;
+}
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    z-index: 1;
+    border-radius: 10px;
+}
+div {
+    padding: 1rem;
+    margin: 1rem;
+}
+.container {
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+background-color: hsl(0, 0%, 90%);
+border-radius: 10px;
+}
+
+p {
+    line-height: 1.8rem;
+}
+.portrait {
+    width: 50%;
+    
+}
+.portrait img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+}
+.aboutme {
+    width: 50%;
+    
+}
+
+.contact {
+    width: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+}
+.projects{
+    width: 50%;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    padding: 1rem;
+    justify-self: center;
+    margin: 0;
+    padding-left: 0;
+}
+li::before{
+    content: ">";
+    padding: 0.2rem;
+}
+li a {
+    text-decoration: none;
+}
+.coachesscreen {
+    padding: 0;
+    margin: 2px;
+}
+.coaches-section {flex-wrap: wrap; display: none;}
+#inner {
+    box-shadow: none;
+}
+.coaches-section a {
+   color: rgb(120, 6, 54);
+   text-align: center;
+   text-decoration: none;
+   background-color: darkgrey;
+   padding: 2rem;
+   margin: 2rem;
+   justify-content: center;
+   display: block;
+   border-radius: 20px;
+   width: 20%;
+}
+.coaches-desc {
+    width:100%;
+}
+
+.coachesscreen img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    justify-content: center;
+}
+#links {
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+a.weblink {
+    display: flex;
+}
+footer {
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    color: white;
+    padding: o;
+    z-index: 1;
+    border-radius: 10px;
+    text-align: center;
+}
